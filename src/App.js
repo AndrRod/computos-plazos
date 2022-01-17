@@ -3,6 +3,7 @@ import React, {useState} from 'react'
 // import logo from './logo.svg';
 // import './App.css';
 import moment from 'moment'
+import diasInhabilesJson from './diasInhabilesJson.json'
 
 function App() {
 
@@ -49,23 +50,25 @@ function App() {
   let DIAS_INHABILES = [moment("14/1/2021", "DD/MM/YYYY"),
   moment("17/1/2022", "DD/MM/YYYY")]
 
-  const lu1 = document.createElement("lu");
-  let li = document.createElement("li");
-  const diasInhabiles = () =>{    
-    DIAS_INHABILES.map((d)=>{
-      // let lu1 = document.getElementById("diasInhabiles");
-      // const lu1 = document.getElementById('diaInhab')  
-      console.log(d['dia independencia'], d['dia perro loco'])    
-      li.insertAdjacentHTML("afterbegin", d.format("DD/MM/YYYY"))
-      // li.replaceChildren(d.format("DD/MM/YYYY"))
-      console.log(li)
-      console.log(lu1)
-    })
-    lu1.appendChild(li);            
-    document.body.appendChild(lu1)
-  };
-    
-  const compPlazosDiasHabiles = (fechaInicial, diasAComputar) =>{
+  let DIAS_INHABILES1 = diasInhabilesJson;
+  // [{"fecha": moment("14/1/2021", "DD/MM/YYYY")},
+  // {"fecha": moment("17/1/2022", "DD/MM/YYYY")}]
+
+  const lu1 = document.createElement("lu");  
+
+  const diasInhabiles = (diasInhab) =>{   
+          // console.log(diasInhab.format("DD/MM/YYYY"))          
+          let li = document.createElement("li");          
+          li.insertAdjacentHTML("afterbegin", diasInhab.format("DD/MM/YYYY"));
+          console.log(li);
+          // lu1.appendChild(li);            
+          lu1.appendChild(li);            
+          document.body.appendChild(lu1)        
+        }
+        
+        
+        
+        const compPlazosDiasHabiles = (fechaInicial, diasAComputar) =>{
         let dias = diasAComputar;
         let fecha = moment(fechaInicial, "DD/MM/YYYY");
         for (let i = 1; i <= diasAComputar; i++) {        
@@ -73,10 +76,10 @@ function App() {
                 diasAComputar++;
             }
             fecha.add(1, 'days').format('DD/MM/YYYY');
-            DIAS_INHABILES.forEach((n)=>{if(n.format('DD/MM/YYYY')===fecha.format('DD/MM/YYYY')) diasAComputar++});
+            DIAS_INHABILES.forEach((n)=>{if((n).format('DD/MM/YYYY')===fecha.format('DD/MM/YYYY')) diasAComputar++});
         }
         let parrafo = document.getElementById("resultado1")       
-        return parrafo.replaceChildren(`fecha inicial ${fechaInicial} más ${diasAComputar} días corridos o ${dias} habiles =`, fecha.format('DD/MM/YYYY'));
+        return parrafo.replaceChildren(`fecha inicial ${fechaInicial} más ${diasAComputar} días corridos o ${dias} habiles = `, fecha.format('DD/MM/YYYY'));
     }
 
 
@@ -107,10 +110,12 @@ function App() {
       
       <button className="boton" onClick={()=> compPlazosDiasHabiles(fechaHabil, cantDiasHab)}>computar plazo</button> 
       
-      <p id="resultado1"></p>      
-      
-      <ul id="diaInhab">{diasInhabiles()}</ul>
+      <p id="resultado1"></p>   
 
+            
+      {/* <ul id="diaInhab">{diasInhabiles(DIAS_INHABILES1)}</ul> */}
+      {/* {diasInhabiles(DIAS_INHABILES)} */}
+      {DIAS_INHABILES1.map((dias)=>{diasInhabiles(toString(dias.fecha))})}
 
     </div>
   );
