@@ -159,6 +159,7 @@ export default function LogicaComputos(props) {
       </div>
       <br />
       <br />
+      
     </div>
   );
 }
