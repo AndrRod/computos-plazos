@@ -80,7 +80,7 @@ export default function LogicaComputos(props) {
             </h1>
             <br />
             <p className="parrafo">
-              Escribe la fecha y cantidad de dias para computar:
+              Escribe la fecha y cantidad de días para computar:
             </p>
             <input
               class="form-control form-control-lg"
@@ -115,7 +115,7 @@ export default function LogicaComputos(props) {
           </div>
           <div class="col">
             <h1>
-              Computo días <strong>HABILES</strong>
+              Computo días <strong>HÁBILES</strong>
             </h1>
             <br />
             <p className="parrafo">
@@ -152,7 +152,7 @@ export default function LogicaComputos(props) {
 
             <div id="resultado1"></div>
 
-            <h4>Dias inhabiles:</h4>
+            <h4>Dias inhábiles:</h4>
             {props.children}
           </div>
         </div>
