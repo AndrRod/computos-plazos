@@ -1,10 +1,121 @@
 [
     {
-        "fecha": "14/1/2021",
-        "feriado": "Dia de la independencia"
+        "fecha": "01/01/2022",
+        "feriado": "FERIA"
     },
     {
-        "fecha": "17/1/2022",
-        "feriado": "Dia de del empleado publico"
+        "fecha": "02/01/2022",
+        "feriado": "FERIA"
+    },
+    {
+        "fecha": "03/01/2022",
+        "feriado": "FERIA"
+    },
+    {
+        "fecha": "04/01/2022",
+        "feriado": "FERIA"
+    },
+    {
+        "fecha": "05/01/2022",
+        "feriado": "FERIA"
+    },
+    {
+        "fecha": "06/01/2022",
+        "feriado": "FERIA"
+    },
+    {
+        "fecha": "07/01/2022",
+        "feriado": "FERIA"
+    },{
+        "fecha": "10/01/2022",
+        "feriado": "FERIA"
+    },{
+        "fecha": "11/01/2022",
+        "feriado": "FERIA"
+    },{
+        "fecha": "12/01/2022",
+        "feriado": "FERIA"
+    },{
+        "fecha": "13/01/2022",
+        "feriado": "FERIA"
+    },{
+        "fecha": "14/01/2022",
+        "feriado": "FERIA"
+    },{
+        "fecha": "17/01/2022",
+        "feriado": "FERIA"
+    },{
+        "fecha": "18/01/2022",
+        "feriado": "FERIA"
+    },{
+        "fecha": "19/01/2022",
+        "feriado": "FERIA"
+    },{
+        "fecha": "20/01/2022",
+        "feriado": "FERIA"
+    },{
+        "fecha": "21/01/2022",
+        "feriado": "FERIA"
+    },{
+        "fecha": "24/01/2022",
+        "feriado": "FERIA"
+    },{
+        "fecha": "25/01/2022",
+        "feriado": "FERIA"
+    },{
+        "fecha": "26/01/2022",
+        "feriado": "FERIA"
+    },
+    {
+        "fecha": "27/01/2022",
+        "feriado": "FERIA"
+    },{
+        "fecha": "28/01/2022",
+        "feriado": "FERIA"
+    },
+    {
+        "fecha": "31/01/2022",
+        "feriado": "FERIA"
+    },
+    {
+        "fecha": "28/02/2022",
+        "feriado": "Dia de Carnaval"
+    },
+    {
+        "fecha": "01/03/2022",
+        "feriado": "Dia de Carnaval"
+    },
+    {
+        "fecha": "24/03/2022",
+        "feriado": "Dia Nacional de la Memoria Verad y Justicia"
+    }
+    ,
+    {
+        "fecha": "15/04/2022",
+        "feriado": "Viernes Santo"
+    },
+    {
+        "fecha": "25/05/2022",
+        "feriado": "Revolución de Mayo"
+    },
+    {
+        "fecha": "20/06/2022",
+        "feriado": "Paso Inmortalidad del Gral Manuel Belgrano"
+    },
+    {
+        "fecha": "09/07/2022",
+        "feriado": "Dia de la Independencia"
+    },
+    {
+        "fecha": "15/08/2022",
+        "feriado": "Paso Inmortalidad del Gral Jose de San Martin"
+    },
+    {
+        "fecha": "10/10/2022",
+        "feriado": "Dia del respeto a la Diversidad Cultural"
+    },
+    {
+        "fecha": "21/11/2022",
+        "feriado": "Feriado Puente: Dia de la Soberania Nacional"
     }
 ]

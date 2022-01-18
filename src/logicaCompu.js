@@ -152,8 +152,10 @@ export default function LogicaComputos(props) {
 
             <div id="resultado1"></div>
 
-            <h4>Dias inhábiles:</h4>
+            
             {props.children}
+
+            
           </div>
         </div>
       </div>
