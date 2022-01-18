@@ -41,5 +41,8 @@
   },
   "devDependencies": {
     "@types/react": "^17.0.38"
+  },
+  "overrides": {
+    "mini-css-extract-plugin": "2.4.5"
   }
 }
