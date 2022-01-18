@@ -1,4 +1,10 @@
 [
-    {"fecha": "14/1/2021"},
-{"fecha": "17/1/2022"}
+    {
+        "fecha": "14/1/2021",
+        "feriado": "Dia de la independencia"
+    },
+    {
+        "fecha": "17/1/2022",
+        "feriado": "Dia de del empleado publico"
+    }
 ]
