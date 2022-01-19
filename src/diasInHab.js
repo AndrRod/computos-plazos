@@ -2,9 +2,9 @@ export default function DiasInhabiles(props){
     let listaDias = document.getElementById("listaDias")
     const fechas  = props.fecha
     const listaFechas = fechas.map((f)=>
-        <li key={f.fecha.toString()}>{f.fecha} ({f.feriado})</li>
+        <li key={f.fecha.toString()} class="list-group-item">{f.fecha} ({f.feriado})</li>
     );
     return(
-        <lu>{listaFechas}</lu>          
+        <lu class="list-group list-group-flush">{listaFechas}</lu>          
     )
 }
