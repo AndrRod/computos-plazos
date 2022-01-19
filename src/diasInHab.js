@@ -5,8 +5,6 @@ export default function DiasInhabiles(props){
         <li key={f.fecha.toString()}>{f.fecha} ({f.feriado})</li>
     );
     return(
-        <lu>{listaFechas}</lu>        
-    // <li>{props.fecha}</li>,
-    // <li>{props.feriado}</li>
+        <lu>{listaFechas}</lu>          
     )
 }

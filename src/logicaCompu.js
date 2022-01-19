@@ -68,6 +68,24 @@ export default function LogicaComputos(props) {
       `ERROR: Revea los datos ingresados por favor`
     );
   };
+
+  let [tipo1, setTipo] = useState('');
+  let [verMenos, setVerMenos] = useState('')
+  tipo1 = "hidden"
+  
+  const cambiarTipo = ()=>{
+      let lu1 = document.getElementById("elementoculto");              
+      let verMas = document.getElementById("verMas")
+      if(lu1.style.visibility == ""){
+        setTipo("hidden")
+        lu1.style.visibility = tipo1;        
+        verMas.replaceChildren("Ver Más");}      
+      else
+      {lu1.style.removeProperty("visibility")
+      verMas.replaceChildren("Ver Menos")}
+    
+  }
+  
   return (
     <div class="container">
       <div className="App">
@@ -152,8 +170,12 @@ export default function LogicaComputos(props) {
 
             <div id="resultado1"></div>
 
-            
+            <h4>Dias inhábiles:</h4>
+            <h6>Son días inhábiles los días Sábados y Domingos, y ademas los siguientes días: <a id="verMas" onClick={cambiarTipo} class="btn btn-primary btn-outline btn-sm" role="button">Ver Menos</a></h6>
+
+            <div id="elementoculto" className="oculto">
             {props.children}
+            </div>
 
             
           </div>
