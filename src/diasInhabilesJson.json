@@ -117,5 +117,55 @@
     {
         "fecha": "21/11/2022",
         "feriado": "Feriado Puente: Dia de la Soberania Nacional"
+    },
+    {
+        "fecha": "18/05/2022",
+        "feriado": "Feriado: Censo"
+    }
+    ,
+    {
+        "fecha": "",
+        "feriado": ""
+    }
+    ,
+    {
+        "fecha": "",
+        "feriado": ""
+    }
+    ,
+    {
+        "fecha": "",
+        "feriado": ""
+    }
+    ,
+    {
+        "fecha": "",
+        "feriado": ""
+    }
+    ,
+    {
+        "fecha": "",
+        "feriado": ""
+    }
+    ,
+    {
+        "fecha": "",
+        "feriado": ""
+    },
+    {
+        "fecha": "",
+        "feriado": ""
+    },
+    {
+        "fecha": "",
+        "feriado": ""
+    },
+    {
+        "fecha": "",
+        "feriado": ""
+    },
+    {
+        "fecha": "",
+        "feriado": ""
     }
 ]
